@@ -26,6 +26,7 @@
 
 #include <bits/stdc++.h>
 #define bit(x, i) ((x >> (i-1)) & 1)
+#define tatbit(x,i) x&~(1<<(i-1))
 #define int long long
 #define ii pair<int, int>
 #define fi first
