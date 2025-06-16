@@ -39,12 +39,12 @@
 using namespace std;
 void freopen()
 {
-#ifndef ONLINE_JUDGE
-    freopen("lta.inp", "r", stdin);
-    freopen("lta.out", "w", stdout);
-#endif // ONLINE_JUDGE
+    if(fopen("lta.inp", "r"))
+    {
+        freopen("lta.inp", "r", stdin);
+        freopen("lta.out", "w", stdout);
+    }
 }
-
 const int N = 1000007;
 const int mod = 1e9 + 7;
 const int inf = 2e9;
